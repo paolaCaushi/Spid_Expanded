@@ -8,6 +8,6 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface SpidRepository extends CrudRepository<Spid, Long> {
+public interface SpidRepository extends JPARepository<Spid, Long> {
     List<Spid> findSpidByUserId(User user);
 }
